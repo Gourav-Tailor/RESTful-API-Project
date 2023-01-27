@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 // Mongoose Connection with mongoDB
 // created a connection using name db `userData`
 mongoose.set('strictQuery', true);
-mongoose.connect("mongodb+srv://gouravtailor:gouravtailor@merntest.cbyv9p4.mongodb.net/userData?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://<username>:<password>@merntest.cbyv9p4.mongodb.net/userData?retryWrites=true&w=majority");
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
